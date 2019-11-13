@@ -42,14 +42,6 @@ def blur
      @image_data[row_index][column_index+1] = 1
     end  
   end
-
-  
-  # def blur!(distance=1)
-  #  distance.times do
-   #   blur_coords!
-  #  end
- # end
-
 end
 =begin
 def blur
@@ -103,15 +95,6 @@ def blur(blur_distance)
       end
     end
   end
-  
-=begin
-  def manhattan_distance (x1, y1, x2, y2)
-    horizontal_distance = (x2 - x1).abs
-    vertical_distance = (y2 - y1).abs
-    # (x2 - x1).abs + (y2 - y1).abs
-    horizontal_distance + vertical_distance
-  end
-=end 
 
 image = Image.new([
   [0, 0, 0, 0],
